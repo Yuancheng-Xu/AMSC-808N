@@ -1,0 +1,1 @@
+The main script is Project1main.m which preprocess the data, set up optimization problems (soft SVM and unconstrained one) and solve optimization problems via various methods (Active Set method, SGD, SINewton and Stochastic L-BFGS). Statistics (objective function value and gradient norm versus iterations and run time) as well as dividing planes are visualized. }

@@ -19,12 +19,12 @@ ind = find(~isfinite(A(:,2)) |  ~isfinite(A(:,3)) | ~isfinite(A(:,4)) ...
     | ~isfinite(A(:,8)) | ~isfinite(A(:,9)));
 A(ind,:) = [];
 %% select CA, OR, WA, NJ, NY counties
-ind = find((A(:,1)>=6000 & A(:,1)<=6999) ...  %CA
- | (A(:,1)>=53000 & A(:,1)<=53999) ...        %WA
- | (A(:,1)>=34000 & A(:,1)<=34999) ...        %NJ  
- | (A(:,1)>=36000 & A(:,1)<=36999) ...        %NY
- | (A(:,1)>=41000 & A(:,1)<=41999));          %OR
-A = A(ind,:);
+% ind = find((A(:,1)>=6000 & A(:,1)<=6999)); ...  %CA
+%  | (A(:,1)>=53000 & A(:,1)<=53999) ...        %WA
+%  | (A(:,1)>=34000 & A(:,1)<=34999) ...        %NJ  
+%  | (A(:,1)>=36000 & A(:,1)<=36999) ...        %NY
+%  | (A(:,1)>=41000 & A(:,1)<=41999));          %OR
+% A = A(ind,:);
 
 [n,dim] = size(A);
 
@@ -107,7 +107,7 @@ Hvec = @(I,Y,w,v)Hvec0(I,Y,w,v,lam);
 
 % tic % start timer
 % Using Subsampled Inexact Newton (Excercise 3)
-% [w,f,gnorm] = SINewton(fun,gfun,Hvec,Y,w,100,1e5); 
+[w,f,gnorm] = SINewton(fun,gfun,Hvec,Y,w,100,1e4); 
 
 % Using Stochastic Gradient Descent (Exercise 2)
 % [w,f,gnorm] = SGD(fun,gfun,Y,w,128,'decreasing',1e5);
@@ -115,25 +115,24 @@ Hvec = @(I,Y,w,v)Hvec0(I,Y,w,v,lam);
 % Using Stochastic L-BFGS (Excersise 4)
 N_g = 128; % batch size for gradient
 N_H = 256; % batch size for Hessian
-[w,f,gnorm] = LBFGS(fun,gfun,Y,w,N_g,N_H,100);
+% [w,f,gnorm] = LBFGS(fun,gfun,Y,w,N_g,N_H,100);
 % toc % end timer
-
 %% Solve soft SVM via ASM using (55) (56) in Q1
-% c = 1e2;
-% [A_SVM,b_SVM] = constraints_SVM(dim,n,Y); % get contraints
-% % find a feasible point
-% tic
-% w = [-1;-1;1;1];
-% xi = zeros(n,1);
-% x_init = [w;xi];
-% [x_init,l_findinit,lcomp_findinit] = FindInitGuess(x_init,A_SVM,b_SVM);
-% % solve via active set method
-% W = []; % working set, parameter of ASM
-% gfun = @(x)g_SVM(x,dim,n,c);
-% Hfun = @(x)H_SVM(x,dim,n,c);
-% [xiter,lm] = ASM(x_init,gfun,Hfun,A_SVM,b_SVM,W,3e5);
-% w = xiter(1:4);
-% % toc
+% inital guess w is obtained by SINewton above
+% initial guess \xi is
+e = ones(n,1);
+xi0 = max(e-Y*w,0);
+x_init = [w;xi0];
+% solve via active set method
+c = 1e3;
+[A_SVM,b_SVM] = constraints_SVM(dim,n,Y); % get contraints
+W = [1:n]'; % working set, parameter of ASM
+gfun = @(x)g_SVM(x,dim,n,c);
+Hfun = @(x)H_SVM(x,dim,n,c);
+tic;
+[w,lm] = ASM(x_init,gfun,Hfun,A_SVM,b_SVM,W,2e3);
+toc
+w = w(1:4);
 %% having found w; plot decision boundary
 fprintf('w = [%d,%d,%d], b = %d\n',w(1),w(2),w(3),w(4));
 

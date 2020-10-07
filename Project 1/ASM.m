@@ -1,19 +1,18 @@
-function [xiter,lm] = ASM(x,gfun,Hfun,A,b,W,itermax) 
+function [x,lm] = ASM(x,gfun,Hfun,A,b,W,itermax) 
 %% minimization using the active set method (Nocedal & Wright, Section 16.5)
-%% the objective function must be positive definite
 % Solves f(x) --> min subject to Ax >= b
 % x = initial guess, a column vector
-% lm is lambda; W is working set
 TOL = 1e-3;
 dim = length(x);
 g = gfun(x);
 H = Hfun(x);
 iter = 0;
 % itermax = 20000;
-m = size(A,1); % the number of constraints
+m = size(A,1) % the number of constraints
+n = m/2;
 % W = working set, the set of active constrains
 I = (1:m)';
-Wc = I; % the compliment of W
+Wc = [(n+1):2*n]'; % the compliment of W
 xiter = x;
 while iter < itermax
     % compute step p: solve 0.5*p'*H*p + g'*p --> min subject to A(W,:)*p = 0

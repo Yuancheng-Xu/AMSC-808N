@@ -126,13 +126,14 @@ x_init = [w;xi0];
 % solve via active set method
 c = 1e3;
 [A_SVM,b_SVM] = constraints_SVM(dim,n,Y); % get contraints
-W = [1:n]'; % working set, parameter of ASM
-gfun = @(x)g_SVM(x,dim,n,c);
-Hfun = @(x)H_SVM(x,dim,n,c);
-tic;
-[w,lm] = ASM(x_init,gfun,Hfun,A_SVM,b_SVM,W,2e3);
-toc
-w = w(1:4);
+active = A_SVM*x_init - b_SVM;
+W = find(~active); % active set (working set), parameter of ASM
+% gfun = @(x)g_SVM(x,dim,n,c);
+% Hfun = @(x)H_SVM(x,dim,n,c);
+% tic;
+% [w,lm] = ASM(x_init,gfun,Hfun,A_SVM,b_SVM,W,1e3);
+% toc
+% w = w(1:4);
 %% having found w; plot decision boundary
 fprintf('w = [%d,%d,%d], b = %d\n',w(1),w(2),w(3),w(4));
 

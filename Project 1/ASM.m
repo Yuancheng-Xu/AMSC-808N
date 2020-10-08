@@ -12,7 +12,7 @@ m = size(A,1) % the number of constraints
 n = m/2;
 % W = working set, the set of active constrains
 I = (1:m)';
-Wc = [(n+1):2*n]'; % the compliment of W
+Wc = setdiff(I,W); % the compliment of W
 xiter = x;
 while iter < itermax
     % compute step p: solve 0.5*p'*H*p + g'*p --> min subject to A(W,:)*p = 0
@@ -75,6 +75,7 @@ while iter < itermax
     end
     iter = iter + 1;
     xiter = [xiter,x]; % save history of x
+length(W)
 end
 if iter == itermax
     fprintf('Stopped because the max number of iterations %d is performed\n',iter);

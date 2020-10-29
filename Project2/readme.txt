@@ -1,1 +1,1 @@
-Project 2 is on matrix factorization (CUR and non negative low rank factorization using PGD or Lee-Seung scheme) and matrix completion (explicit low rank or minimize over nuclear norm). 
+Project 2 is on matrix factorization (CUR and non negative low rank factorization using PGD and Lee-Seung scheme) and matrix completion (explicit low rank or minimize over nuclear norm). 

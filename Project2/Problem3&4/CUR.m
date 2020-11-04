@@ -1,4 +1,4 @@
-function [C,U,R] = CUR(M,k,c)
+function [C,U,R,res_CUR,res_SVD] = CUR(M,k,c)
 %% CUR decomposition: M = CUR 
 % C and R are from the actual rows and columns of M
 
@@ -16,8 +16,10 @@ U = (pinv(R')*UR')';
 
 % CUR error
 res = M - C*U*R;
+res_CUR = norm(res,'fro'); 
 svd_M = svd(M);
-fprintf('CUR composition: approximation error in 2-norm is %d, and approximation error for k-SVD is %d\n\n',norm(res),svd_M(k+1));
+res_SVD = norm(svd_M(k+1:end),'fro');
+fprintf('CUR composition: approximation error in F-norm is %d, and approximation error for k-SVD is %d\n\n',res_CUR,res_SVD);
 end
 
  

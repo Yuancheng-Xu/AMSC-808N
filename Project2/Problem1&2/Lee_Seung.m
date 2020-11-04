@@ -9,6 +9,12 @@ phi_history = zeros(iter_max,1); % save phi
 for iter = 1 : iter_max
     W = (W .* (A * H')) ./ (W * H * H');
     H = (H .* (W' * A)) ./ (W' * W * H);
+
+    % the following updates (using both old ones) will diverge! 
+%     W_ = (W .* (A * H')) ./ (W * H * H');
+%     H_ = (H .* (W' * A)) ./ (W' * W * H);
+%     W = W_;
+%     H = H_;
     
     R = A - W * H;
     phi = norm(R,'fro');

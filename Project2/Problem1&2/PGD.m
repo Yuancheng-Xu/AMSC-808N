@@ -10,9 +10,9 @@ R = A - W * H;
 for iter = 1 : iter_max
     % obtain step size
     if strcmp(step_strategy,'fixed')
-        step_size = 1e-5;
+        step_size = 1e-3;
     elseif strcmp(step_strategy,'decreasing')
-        step_size = 1e-4 * 1000/(1000+k);
+        step_size = 1e-3 * 1000/(1000+k);
     else 
         error('PGD step strategy not available\n')
     end

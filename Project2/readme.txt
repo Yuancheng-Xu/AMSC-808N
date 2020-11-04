@@ -1,1 +1,1 @@
-Project 2 is on matrix factorization (CUR and nonnegative low rank factorization using PGD and Lee-Seung scheme) and matrix completion (explicit low rank or minimize over nuclear norm). 
+Project 2 is on matrix factorization (CUR and nonnegative low rank factorization using PGD and Lee-Seung scheme) and matrix completion (explicit low rank or minimize over nuclear norm). In the Final problem (classification + feature selection) I use supervised feature selection and dimension reduction techniques (chi-square tests and linear discriminant analysis).

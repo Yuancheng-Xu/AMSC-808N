@@ -1,0 +1,1 @@
+The coding part of HW5, implementing and experiment with dimension reduction methods including PCA, Isomap, Diffusion map, t-SNE and LLE. The 2-D and 3-D colored visualizations are available. 3-D and high-dim datasets are used, both with intrinsic dimension 2. 

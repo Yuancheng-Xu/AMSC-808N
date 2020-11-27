@@ -1,1 +1,1 @@
-HW6: Implementation of BFS and DFS. Check statistics of Poisson Random Graph, including the fraction of a giant component, average size of non-giant components and the average length of shortest paths. Comparison of simulations and theories are available.
+HW6: Implementation of BFS and DFS. Check statistics of Poisson Random Graph, including the fraction of a giant component, average size of non-giant components and the average length of shortest paths. Comparisons between simulations and theories are available.

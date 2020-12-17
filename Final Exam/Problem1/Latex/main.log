@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.20)  17 DEC 2020 20:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.9.20)  17 DEC 2020 21:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -461,26 +461,34 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 37.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+bbm on input line 45.
+Overfull \hbox (7.74693pt too wide) in paragraph at lines 38--40
+[]$\OT1/cmtt/m/n/10 https : / / github . com / Yuancheng-[]Xu / AMSC-[]808N / t
+ree / master / Final % 20Exam /
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--40
+
+ []
+
+LaTeX Font Info:    Trying to load font information for U+bbm on input line 45.
 
 (/usr/local/texlive/2020/texmf-dist/tex/latex/bbm-macros/ubbm.fd
 File: ubbm.fd 1999/03/15 V 1.2 Font definition for bbm font - TH
 ) [1
 
 {/usr/local/texlive/2020/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<figs/SpaceDecompostion.png, id=30, 699.61375pt x 659.46375pt>
+<figs/SpaceDecompostion.png, id=33, 699.61375pt x 659.46375pt>
 File: figs/SpaceDecompostion.png Graphic file (type png)
 <use figs/SpaceDecompostion.png>
 Package pdftex.def Info: figs/SpaceDecompostion.png  used on input line 86.
 (pdftex.def)             Requested size: 241.49895pt x 227.63599pt.
- [2 <./figs/SpaceDecompostion.png>]
-<figs/vecfield_global.png, id=43, 453.3738pt x 363.2772pt>
+<figs/vecfield_global.png, id=37, 453.3738pt x 363.2772pt>
 File: figs/vecfield_global.png Graphic file (type png)
 <use figs/vecfield_global.png>
 Package pdftex.def Info: figs/vecfield_global.png  used on input line 99.
 (pdftex.def)             Requested size: 172.5pt x 138.21861pt.
-<figs/vecfield_veryclose.png, id=44, 466.3824pt x 363.2772pt>
+<figs/vecfield_veryclose.png, id=38, 466.3824pt x 363.2772pt>
 File: figs/vecfield_veryclose.png Graphic file (type png)
 <use figs/vecfield_veryclose.png>
 Package pdftex.def Info: figs/vecfield_veryclose.png  used on input line 103.
@@ -490,39 +498,39 @@ Overfull \hbox (5.17479pt too wide) in paragraph at lines 98--106
 [][][] 
  []
 
-<figs/Q2_99percent.png, id=47, 466.3824pt x 363.2772pt>
+[2] [3 <./figs/SpaceDecompostion.png> <./figs/vecfield_global.png (PNG copy)> <
+./figs/vecfield_veryclose.png (PNG copy)>]
+<figs/Q2_99percent.png, id=61, 466.3824pt x 363.2772pt>
 File: figs/Q2_99percent.png Graphic file (type png)
 <use figs/Q2_99percent.png>
 Package pdftex.def Info: figs/Q2_99percent.png  used on input line 113.
 (pdftex.def)             Requested size: 241.49895pt x 188.10701pt.
-[3 <./figs/vecfield_global.png (PNG copy)> <./figs/vecfield_veryclose.png (PNG 
-copy)>]
-<figs/Q2_132.png, id=60, 466.3824pt x 363.2772pt>
+<figs/Q2_132.png, id=63, 466.3824pt x 363.2772pt>
 File: figs/Q2_132.png Graphic file (type png)
 <use figs/Q2_132.png>
 Package pdftex.def Info: figs/Q2_132.png  used on input line 126.
 (pdftex.def)             Requested size: 138.00052pt x 107.49289pt.
-<figs/Q2_131.png, id=61, 466.3824pt x 363.2772pt>
+<figs/Q2_131.png, id=64, 466.3824pt x 363.2772pt>
 File: figs/Q2_131.png Graphic file (type png)
 <use figs/Q2_131.png>
 Package pdftex.def Info: figs/Q2_131.png  used on input line 131.
 (pdftex.def)             Requested size: 138.00052pt x 107.49289pt.
-<figs/Q2_100.png, id=62, 466.3824pt x 363.2772pt>
+<figs/Q2_100.png, id=65, 466.3824pt x 363.2772pt>
 File: figs/Q2_100.png Graphic file (type png)
 <use figs/Q2_100.png>
 Package pdftex.def Info: figs/Q2_100.png  used on input line 136.
 (pdftex.def)             Requested size: 138.00052pt x 107.49289pt.
-<figs/Q2_70.png, id=63, 466.3824pt x 363.2772pt>
+<figs/Q2_70.png, id=66, 466.3824pt x 363.2772pt>
 File: figs/Q2_70.png Graphic file (type png)
 <use figs/Q2_70.png>
 Package pdftex.def Info: figs/Q2_70.png  used on input line 141.
 (pdftex.def)             Requested size: 138.00052pt x 107.49289pt.
-<figs/Q2_60.png, id=64, 466.3824pt x 363.2772pt>
+<figs/Q2_60.png, id=67, 466.3824pt x 363.2772pt>
 File: figs/Q2_60.png Graphic file (type png)
 <use figs/Q2_60.png>
 Package pdftex.def Info: figs/Q2_60.png  used on input line 146.
 (pdftex.def)             Requested size: 138.00052pt x 107.49289pt.
-<figs/Q2_30.png, id=65, 466.3824pt x 363.2772pt>
+<figs/Q2_30.png, id=68, 466.3824pt x 363.2772pt>
 File: figs/Q2_30.png Graphic file (type png)
 <use figs/Q2_30.png>
 Package pdftex.def Info: figs/Q2_30.png  used on input line 151.
@@ -545,17 +553,17 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 124--154
 [4 <./figs/Q2_99percent.png (PNG copy)>] [5 <./figs/Q2_132.png (PNG copy)> <./f
 igs/Q2_131.png (PNG copy)> <./figs/Q2_100.png (PNG copy)> <./figs/Q2_70.png (PN
 G copy)> <./figs/Q2_60.png (PNG copy)> <./figs/Q2_30.png (PNG copy)>]
-<figs/Q2_iteration_alpha.png, id=83, 484.6908pt x 379.1766pt>
+<figs/Q2_iteration_alpha.png, id=86, 484.6908pt x 379.1766pt>
 File: figs/Q2_iteration_alpha.png Graphic file (type png)
 <use figs/Q2_iteration_alpha.png>
 Package pdftex.def Info: figs/Q2_iteration_alpha.png  used on input line 168.
 (pdftex.def)             Requested size: 241.49895pt x 188.92247pt.
-<figs/Q2_12652.png, id=84, 466.3824pt x 363.2772pt>
+<figs/Q2_12652.png, id=87, 466.3824pt x 363.2772pt>
 File: figs/Q2_12652.png Graphic file (type png)
 <use figs/Q2_12652.png>
 Package pdftex.def Info: figs/Q2_12652.png  used on input line 175.
 (pdftex.def)             Requested size: 172.5pt x 134.36612pt.
-<figs/Q2_12988.png, id=85, 466.3824pt x 363.2772pt>
+<figs/Q2_12988.png, id=88, 466.3824pt x 363.2772pt>
 File: figs/Q2_12988.png Graphic file (type png)
 <use figs/Q2_12988.png>
 Package pdftex.def Info: figs/Q2_12988.png  used on input line 179.
@@ -566,49 +574,49 @@ Overfull \hbox (5.17479pt too wide) in paragraph at lines 174--182
  []
 
 [6 <./figs/Q2_iteration_alpha.png (PNG copy)>]
-<figs/Q3/Iteration/M1000_a03.png, id=95, 485.6544pt x 385.44pt>
+<figs/Q3/Iteration/M1000_a03.png, id=97, 485.6544pt x 385.44pt>
 File: figs/Q3/Iteration/M1000_a03.png Graphic file (type png)
 <use figs/Q3/Iteration/M1000_a03.png>
 Package pdftex.def Info: figs/Q3/Iteration/M1000_a03.png  used on input line 19
 5.
 (pdftex.def)             Requested size: 155.24895pt x 123.21393pt.
-<figs/Q3/Iteration/M1000_a06.png, id=96, 485.6544pt x 385.44pt>
+<figs/Q3/Iteration/M1000_a06.png, id=98, 485.6544pt x 385.44pt>
 File: figs/Q3/Iteration/M1000_a06.png Graphic file (type png)
 <use figs/Q3/Iteration/M1000_a06.png>
 Package pdftex.def Info: figs/Q3/Iteration/M1000_a06.png  used on input line 20
 0.
 (pdftex.def)             Requested size: 155.24895pt x 123.21393pt.
-<figs/Q3/Iteration/M1000_a08.png, id=97, 483.2454pt x 385.44pt>
+<figs/Q3/Iteration/M1000_a08.png, id=99, 483.2454pt x 385.44pt>
 File: figs/Q3/Iteration/M1000_a08.png Graphic file (type png)
 <use figs/Q3/Iteration/M1000_a08.png>
 Package pdftex.def Info: figs/Q3/Iteration/M1000_a08.png  used on input line 20
 5.
 (pdftex.def)             Requested size: 155.24895pt x 123.82558pt.
-<figs/Q3/Iteration/M1000_a1.png, id=98, 483.2454pt x 385.44pt>
+<figs/Q3/Iteration/M1000_a1.png, id=100, 483.2454pt x 385.44pt>
 File: figs/Q3/Iteration/M1000_a1.png Graphic file (type png)
 <use figs/Q3/Iteration/M1000_a1.png>
 Package pdftex.def Info: figs/Q3/Iteration/M1000_a1.png  used on input line 210
 .
 (pdftex.def)             Requested size: 155.24895pt x 123.82558pt.
-<figs/Q3/Iteration/M1000_a2.png, id=99, 483.2454pt x 385.44pt>
+<figs/Q3/Iteration/M1000_a2.png, id=101, 483.2454pt x 385.44pt>
 File: figs/Q3/Iteration/M1000_a2.png Graphic file (type png)
 <use figs/Q3/Iteration/M1000_a2.png>
 Package pdftex.def Info: figs/Q3/Iteration/M1000_a2.png  used on input line 215
 .
 (pdftex.def)             Requested size: 155.24895pt x 123.82558pt.
-<figs/Q3/Iteration/M1000_a3.png, id=100, 483.2454pt x 385.44pt>
+<figs/Q3/Iteration/M1000_a3.png, id=102, 483.2454pt x 385.44pt>
 File: figs/Q3/Iteration/M1000_a3.png Graphic file (type png)
 <use figs/Q3/Iteration/M1000_a3.png>
 Package pdftex.def Info: figs/Q3/Iteration/M1000_a3.png  used on input line 220
 .
 (pdftex.def)             Requested size: 155.24895pt x 123.82558pt.
-<figs/Q3/Iteration/M1000_a465.png, id=101, 480.3546pt x 385.44pt>
+<figs/Q3/Iteration/M1000_a465.png, id=103, 480.3546pt x 385.44pt>
 File: figs/Q3/Iteration/M1000_a465.png Graphic file (type png)
 <use figs/Q3/Iteration/M1000_a465.png>
 Package pdftex.def Info: figs/Q3/Iteration/M1000_a465.png  used on input line 2
 25.
 (pdftex.def)             Requested size: 155.24895pt x 124.57251pt.
-<figs/Q3/Iteration/M1000_a470.png, id=102, 480.3546pt x 385.44pt>
+<figs/Q3/Iteration/M1000_a470.png, id=104, 480.3546pt x 385.44pt>
 File: figs/Q3/Iteration/M1000_a470.png Graphic file (type png)
 <use figs/Q3/Iteration/M1000_a470.png>
 Package pdftex.def Info: figs/Q3/Iteration/M1000_a470.png  used on input line 2
@@ -637,49 +645,49 @@ Overfull \hbox (2.22221pt too wide) in paragraph at lines 193--233
 
 LaTeX Warning: Float too large for page by 62.43759pt on input line 237.
 
-<figs/Q3/Histogram/M1000_a03.png, id=103, 458.1918pt x 385.44pt>
+<figs/Q3/Histogram/M1000_a03.png, id=105, 458.1918pt x 385.44pt>
 File: figs/Q3/Histogram/M1000_a03.png Graphic file (type png)
 <use figs/Q3/Histogram/M1000_a03.png>
 Package pdftex.def Info: figs/Q3/Histogram/M1000_a03.png  used on input line 24
 4.
 (pdftex.def)             Requested size: 138.00052pt x 116.08575pt.
-<figs/Q3/Histogram/M1000_a06.png, id=104, 457.71pt x 385.44pt>
+<figs/Q3/Histogram/M1000_a06.png, id=106, 457.71pt x 385.44pt>
 File: figs/Q3/Histogram/M1000_a06.png Graphic file (type png)
 <use figs/Q3/Histogram/M1000_a06.png>
 Package pdftex.def Info: figs/Q3/Histogram/M1000_a06.png  used on input line 24
 9.
 (pdftex.def)             Requested size: 138.00052pt x 116.20926pt.
-<figs/Q3/Histogram/M1000_a08.png, id=105, 458.1918pt x 385.44pt>
+<figs/Q3/Histogram/M1000_a08.png, id=107, 458.1918pt x 385.44pt>
 File: figs/Q3/Histogram/M1000_a08.png Graphic file (type png)
 <use figs/Q3/Histogram/M1000_a08.png>
 Package pdftex.def Info: figs/Q3/Histogram/M1000_a08.png  used on input line 25
 4.
 (pdftex.def)             Requested size: 138.00052pt x 116.08575pt.
-<figs/Q3/Histogram/M1000_a1.png, id=106, 458.1918pt x 387.3672pt>
+<figs/Q3/Histogram/M1000_a1.png, id=108, 458.1918pt x 387.3672pt>
 File: figs/Q3/Histogram/M1000_a1.png Graphic file (type png)
 <use figs/Q3/Histogram/M1000_a1.png>
 Package pdftex.def Info: figs/Q3/Histogram/M1000_a1.png  used on input line 259
 .
 (pdftex.def)             Requested size: 138.00052pt x 116.66618pt.
-<figs/Q3/Histogram/M1000_a2.png, id=107, 458.1918pt x 385.44pt>
+<figs/Q3/Histogram/M1000_a2.png, id=109, 458.1918pt x 385.44pt>
 File: figs/Q3/Histogram/M1000_a2.png Graphic file (type png)
 <use figs/Q3/Histogram/M1000_a2.png>
 Package pdftex.def Info: figs/Q3/Histogram/M1000_a2.png  used on input line 264
 .
 (pdftex.def)             Requested size: 138.00052pt x 116.08575pt.
-<figs/Q3/Histogram/M1000_a3.png, id=108, 458.1918pt x 385.44pt>
+<figs/Q3/Histogram/M1000_a3.png, id=110, 458.1918pt x 385.44pt>
 File: figs/Q3/Histogram/M1000_a3.png Graphic file (type png)
 <use figs/Q3/Histogram/M1000_a3.png>
 Package pdftex.def Info: figs/Q3/Histogram/M1000_a3.png  used on input line 269
 .
 (pdftex.def)             Requested size: 138.00052pt x 116.08575pt.
-<figs/Q3/Histogram/M1000_a4.png, id=109, 464.4552pt x 385.44pt>
+<figs/Q3/Histogram/M1000_a4.png, id=111, 464.4552pt x 385.44pt>
 File: figs/Q3/Histogram/M1000_a4.png Graphic file (type png)
 <use figs/Q3/Histogram/M1000_a4.png>
 Package pdftex.def Info: figs/Q3/Histogram/M1000_a4.png  used on input line 274
 .
 (pdftex.def)             Requested size: 138.00052pt x 114.52132pt.
-<figs/Q3/Histogram/M1000_a465.png, id=110, 458.6736pt x 385.44pt>
+<figs/Q3/Histogram/M1000_a465.png, id=112, 458.6736pt x 385.44pt>
 File: figs/Q3/Histogram/M1000_a465.png Graphic file (type png)
 <use figs/Q3/Histogram/M1000_a465.png>
 Package pdftex.def Info: figs/Q3/Histogram/M1000_a465.png  used on input line 2
@@ -719,12 +727,12 @@ py)> <./figs/Q3/Iteration/M1000_a470.png (PNG copy)>] [9 <./figs/Q3/Histogram/M
 copy)> <./figs/Q3/Histogram/M1000_a2.png (PNG copy)> <./figs/Q3/Histogram/M1000
 _a3.png (PNG copy)> <./figs/Q3/Histogram/M1000_a4.png (PNG copy)> <./figs/Q3/Hi
 stogram/M1000_a465.png (PNG copy)>]
-<figs/Q3/a2_traj.png, id=132, 466.3824pt x 363.2772pt>
+<figs/Q3/a2_traj.png, id=134, 466.3824pt x 363.2772pt>
 File: figs/Q3/a2_traj.png Graphic file (type png)
 <use figs/Q3/a2_traj.png>
 Package pdftex.def Info: figs/Q3/a2_traj.png  used on input line 294.
 (pdftex.def)             Requested size: 172.5pt x 134.36612pt.
-<figs/Q3/a03_traj.png, id=133, 466.3824pt x 363.2772pt>
+<figs/Q3/a03_traj.png, id=135, 466.3824pt x 363.2772pt>
 File: figs/Q3/a03_traj.png Graphic file (type png)
 <use figs/Q3/a03_traj.png>
 Package pdftex.def Info: figs/Q3/a03_traj.png  used on input line 298.
@@ -746,13 +754,13 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 304.
  ) 
 Here is how much of TeX's memory you used:
- 9955 strings out of 480608
- 146626 string characters out of 5903630
+ 9957 strings out of 480608
+ 146647 string characters out of 5903630
  422463 words of memory out of 5000000
- 25583 multiletter control sequences out of 15000+600000
- 548573 words of font info for 86 fonts, out of 8000000 for 9000
+ 25584 multiletter control sequences out of 15000+600000
+ 548741 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,8n,46p,1324b,544s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,8n,46p,1324b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
 } </Users/xuyuancheng/Library/texlive/2020/texmf-var/fonts/pk/ljfour/public/bbm
 /bbm10.600pk></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm
@@ -772,11 +780,12 @@ local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loc
 al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/
 texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
 exlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/tex
-live/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (10 pages, 1229990 bytes).
+live/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texl
+ive/2020/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
+Output written on main.pdf (10 pages, 1244838 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 144 compressed objects within 2 object streams
+ 215 PDF objects out of 1000 (max. 8388607)
+ 149 compressed objects within 2 object streams
  33 named destinations out of 1000 (max. 500000)
  156 words of extra memory for PDF output out of 10000 (max. 10000000)
 

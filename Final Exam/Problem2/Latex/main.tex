@@ -35,15 +35,15 @@
 
 \maketitle
 
-%\noindent Code link:\\
-%\url{https://github.com/Yuancheng-Xu/AMSC-808N/tree/master/HW6}\\
+\noindent Code link:\\
+\url{https://github.com/Yuancheng-Xu/AMSC-808N/tree/master/Final%20Exam/Problem2/Code}\\
 
 \section*{Q1}
 Firstly, we give an expression for the critical transmissibility $ T_c $. As derived in class, we have $ T_c =  \frac{\sum_{k=1}^{\infty}kp_k}{\sum_{k=1}^{\infty}k(k-1)p_k} = \frac{\langle k \rangle}{\langle k^2 \rangle - \langle k \rangle} = \frac{1}{\kappa - 1}$. Note that since the original graph has a giant component, $ \kappa > 2 $ and thus $ T_c <1 $.
 
-Now assume that $ T > T_c $ (so there will be an epidemic if we do nothing) and we would like to know  if we vaccinate a fraction $ v $ of randomly selected nodes (before the spread of disease), can we destroy the epidemic and most importantly, what is the critical value $ v_c $ (the minimal fraction of vaccinated node in order to stop the epidemic). Taking the vaccine into account and assuming there is no epidemic, we will first derive the generating function for the transmitting edges, then the generating function for the size of transmitting cluster and finally, the average outbreak size, from which we will extract the critical $ v_c $.
+Now assume that $ T > T_c $ (so there will be an epidemic if we do nothing) and we would like to know  if we vaccinate a fraction $ v $ of randomly selected nodes (before the spread of disease), can we destroy the epidemic and most importantly, what is the critical value $ v_c $ (the minimal fraction of vaccinated node in order to stop the epidemic). Taking the vaccine into account and assuming there is no epidemic, we will first derive the generating function for the number of transmitting edges, then the generating function for the size of a transmitting cluster and finally, the average outbreak size, from which we will extract the critical value $ v_c $.
 
-As usual, let $ G_0(x) = \sum_{k=0}^{\infty}p_k x^k $ and $ G_1(x) =\frac{G_0'(x)}{\langle k \rangle} $ denote the generating function for degree and excess degree distribution. Note that the probability that an edge is transmitting, when taking the vaccine into account, is $ (1-v)T $ and is not transmitting with probability $ v + (1-v)(1-T) $. Therefore, the generating function for distribution of transmitting edges adjacent to a node is 
+As usual, let $ G_0(x) = \sum_{k=0}^{\infty}p_k x^k $ and $ G_1(x) =\frac{G_0'(x)}{\langle k \rangle} $ denote the generating function for the degree and excess degree distribution. Note that the probability that an edge is transmitting, when taking the vaccine into account, is $ (1-v)T $ and is not transmitting with probability $ v + (1-v)(1-T) $. Therefore, the generating function for the distribution of the number of transmitting edges adjacent to a randomly chosen node is 
 
 \begin{equation}\label{G_0}
 	\begin{aligned}
@@ -62,7 +62,7 @@ Similarly, we can obtain the generating function for distribution of transmittin
 	\end{aligned}
 \end{equation}
 
-Then the generating functions for the size of transmitting cluster reached from a random edge and vertex are given by
+Then the generating functions for the size of a transmitting cluster reached from a random edge and vertex are given by
 \begin{equation}\label{H_1}
 	H_1(x;T) = xG_1(H_1(x;T);T)
 \end{equation}
@@ -87,13 +87,13 @@ Therefore, the phase transition occurs when $ 1 - T(1-v)G_1'(1) = 0 $. Since T i
 \section*{Q2}
 
 \subsection*{(a)}
-First we compute the generating function for degree and excess degree distribution. Denote $ \mathrm{Li}_\alpha(x) =\sum_{k=1}^{\infty} \frac{x^k}{k^\alpha}$ and therefore $ \mathrm{Li}_\alpha(1) = \zeta(\alpha)$. Note that $ \mathrm{Li}_\alpha '(x) = \frac{1}{x}\mathrm{Li}_{\alpha-1}(x) $
+First we compute the generating function for the degree and excess degree distribution. Denote $ \mathrm{Li}_\alpha(x) =\sum_{k=1}^{\infty} \frac{x^k}{k^\alpha}$ and therefore $ \mathrm{Li}_\alpha(1) = \zeta(\alpha)$. Note that $ \mathrm{Li}_\alpha '(x) = \frac{1}{x}\mathrm{Li}_{\alpha-1}(x) $
 
 $$ G_0(x) = \frac{1}{\mathrm{Li}_\alpha(1)}\sum_{k=1}^{\infty}k^{-\alpha}x^k = \frac{1}{\mathrm{Li}_\alpha(1)}\mathrm{Li}_\alpha(x)$$
 
 $$ G_1(x) =\frac{G_0'(x)}{\langle k \rangle} =  \frac{\mathrm{Li}_\alpha '(x)}{\mathrm{Li}_\alpha(1) \frac{\mathrm{Li}_{\alpha-1}(1)}{\mathrm{Li}_\alpha(1)}} = \frac{\mathrm{Li}_{\alpha-1}(x)}{x\mathrm{Li}_{\alpha-1}(1)}$$
 
-Now let $ u $ be the solution of $ u = G_1(u) $ (we  numerically compute $ u $ by solving $ u =   \frac{\mathrm{Li}_{\alpha-1}(u)}{u\mathrm{Li}_{\alpha-1}(1)}$ in Matlab). As we have derived in class, the fraction $ S $ of nodes in the giant component can be computed by $ S = 1 - G_0(u) $. Therefore, $$ S = 1 - \frac{\mathrm{Li}_\alpha(u)}{\mathrm{Li}_\alpha(1)} $$.
+Now let $ u $ be the solution of $ u = G_1(u) $ (we  numerically compute $ u $ by solving $ u =   \frac{\mathrm{Li}_{\alpha-1}(u)}{u\mathrm{Li}_{\alpha-1}(1)}$ in Matlab). As we have derived in class, the fraction $ S $ of nodes in the giant component can be computed by $ S = 1 - G_0(u) $. Therefore, $$ S = 1 - \frac{\mathrm{Li}_\alpha(u)}{\mathrm{Li}_\alpha(1)} $$
 
 Using $ \alpha = 2.2 $ , we find $ u = 0.1963 $ and $ S = 0.8622 $, which is the fraction of nodes in the giant component.
 
@@ -124,7 +124,7 @@ To simulate this, we first generate the original graph and then keep each edge w
 The value obtained by simulation is $ 0.3691 $, averaged over 100 runs.
 
 \subsection*{(c)}
-Since $ \alpha < 3 $, by theory we have $ T_c =0 $ for an infinite graph. Therefore, by theory, as long as $ T>0 $, the giant component (epidemic) occurs. To verify if this is true in the simulation, we plot the fraction $ S $ versus $ T $ in Figure \ref{fig: Q3_c}. By printing out specific values in this figure, we observe that when $ T<0.03 $, we find $ S<0.01 $ and $ S $ increases slowly with $ T $. Therefore we suspect that $ T_c = 0.03 $ is the critical value for this finite graph (so below this threshold there is no giant component). When $ T>0.03 $, $ S $ is roughly linear in $ T $ and epidemic obviously occurs.
+Since $ \alpha < 3 $, by theory we have $ T_c =0 $ for an infinite graph. Therefore, by theory, as long as $ T>0 $, the giant component (epidemic) occurs. To verify if this is true in the simulation, we plot the fraction $ S $ versus $ T $ in Figure \ref{fig: Q3_c}. By printing out specific values in this figure, we observe that when $ T<0.03 $, we find $ S<0.01 $ and $ S $ increases slowly with $ T $. Therefore we suspect that $ T_c = 0.03 $ is the critical value for this finite graph (so below this threshold there is no giant component). When $ T>0.03 $, $ S $ is roughly linear in $ T $ and epidemic occurs.
 
 \begin{figure}[htp]
 	\centering
@@ -136,7 +136,7 @@ Since $ \alpha < 3 $, by theory we have $ T_c =0 $ for an infinite graph. Theref
 \subsection*{(d)}
 As we have seen in Q2, the critical value $ v_c = 1 $ by theory. To simulate this, we first generate the original graph and vaccinate fraction $ v $ of nodes. Then for each edge in the original graph, if the corresponding node is not vaccinated, then with probability $ T $ we keep it and otherwise, we remove it. We run DFS on the resulting graph to obtain the fraction of the giant component.
 
-The result is shown in Figure \ref{fig: Q3_d}. We see that as expected, the fraction $ S $ decreases as vaccine $ v $ increases. However, in order to fully eliminate the epidemic (say, $ S < 0.01 $), we need $ v >  0.93 $ and therefore we conclude that in this finite graph case, $ v_c = 0.93 $ (this is also observed by printing out the values in Figure \ref{fig: Q3_d}).
+The result is shown in Figure \ref{fig: Q3_d}. We see that as expected, the fraction $ S $ decreases as vaccine $ v $ increases. However, in order to fully eliminate the epidemic (say, $ S < 0.01 $), we need $ v >  0.93 $ and therefore we conclude that in this finite graph case, $ v_c = 0.93 $ (this value is obtained by printing out the specific values in Figure \ref{fig: Q3_d}).
 
 \begin{figure}[htp]
 	\centering
@@ -149,7 +149,7 @@ The result is shown in Figure \ref{fig: Q3_d}. We see that as expected, the frac
 Here we run a discrete time SIR model (with $ \alpha=2.2, T = 0.4 $ and no vaccine) from a single infecting node. We assume that each infecting node remains infecting for one time step (for example, at time $ t-1 $, a node v is uninfected; at time $ t $, it is infected. Then it is infecting at $ t+1 $ and not infecting at $ t+2 $ ). The epidemic graph is generated in the same way as in Q3.c. Note that in this question, by construction, the transmitting edges are fixed forever (in the graph generating process) while in practice, it may happen that at time $ t $ a node infects a fraction $ T $ of its neighbors and at the next time step $ t+1 $, it infects potentially a different fraction of its neighbors. However, we only focus on simulating
  the fixed transmitting edges case.
  
-Using $ n = 10000$, we visualize how the fraction of infecting nodes evolves with time in Figure \ref{fig: Q4_fractionTime}. We can observe that when the epidemic does occur (when the starting infecting point is in the giant component), the fraction of infecting nodes first increases to a peak (about 0.27) and then decrease to zero.
+Using $ n = 10000$, we visualize how the fraction of infecting nodes evolves with time in Figure \ref{fig: Q4_fractionTime}. We can observe that when the epidemic does occur (when the starting infecting point is in the giant component), the fraction of infecting nodes first increases to a peak (about 0.27) and then decreases to zero.
  
  \begin{figure}[htp]
  	\centering
@@ -160,7 +160,7 @@ Using $ n = 10000$, we visualize how the fraction of infecting nodes evolves wit
  
 \paragraph{How the duration scales with n? Relation with BFS?} 
 This SIR model is very similar to Breadth-first search (BFS). Indeed, SIR can be viewed as a disease exploring the graph (after keeping edges of the original graph with probability $ T $) in a BFS manner, since at each step the disease transmit to neighbors that have never been infected (visited) before.
-We would like to know how the duration scales with the number of nodes in the graph. Using the intuition of BFS, which explores the graph as if it were a tree, we can predict that the duration should scale with $ log(n) $, the height of a tree with $ n $ nodes. This is partially verified in Figure \ref{fig: Q4_duration}, where the simulations are run with varying $ n $ values. Note that only the case where the starting infecting node is in the giant component (so the epidemic occurs) is recorded.
+We would like to know how the duration scales with the number of nodes in the graph. Using the intuition of BFS, which explores the graph as if it were a tree, we can predict that the duration should scale with $ log(n) $, the height of a tree with $ n $ nodes. This is partially verified in Figure \ref{fig: Q4_duration}, where the simulations are run with varying $ n $ values. Note that only the case where the starting infecting node is in the giant component (so the epidemic does occur) is recorded.
 
 
 \begin{figure} 
